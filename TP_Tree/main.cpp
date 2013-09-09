@@ -8,6 +8,14 @@ int main() {
 
 	int g = t1.grown();
 	cout << "Grown " << g << endl;
+
+	int s;
+	do {
+		s = t1.shake();
+		cout << "Dropped " << s << endl;
+	} while (s > 0);
+
+	int shake();
 		
 	return 0;
 }

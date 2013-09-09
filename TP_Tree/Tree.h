@@ -8,6 +8,7 @@ class Tree {
 public:
 	Tree(float, float);
 	int grown();
+	int shake();
 };
 
 class Apple {
