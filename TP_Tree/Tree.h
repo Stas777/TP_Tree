@@ -12,6 +12,7 @@ public:
 class Tree {
 	float height;				// высота в метрах
 	float age;					// возраст в годах
+	int flowers;				// количество цветов на дереве
 	int amount;					// количество яблок на дереве
 	Apple *apples;
 
@@ -21,4 +22,5 @@ public:
 	int shake();
 	int getAmount();
 	int seedsAmount();
+	int flower();
 };

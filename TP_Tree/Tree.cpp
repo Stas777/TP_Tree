@@ -9,7 +9,7 @@ Tree::Tree(float h, float a){
 }
 
 int Tree::grown() {
-	amount = rand()%101;
+	amount = rand()%(flowers+1);
 	apples = new Apple[amount];
 	return amount;
 };
@@ -31,6 +31,11 @@ int Tree::seedsAmount(){
 		s+=apples[i].getSeeds();
 	}
 	return s;
+};
+
+int Tree::flower(){
+	flowers = rand()%101;
+	return flowers;
 };
 
 int Apple::getSeeds() {
