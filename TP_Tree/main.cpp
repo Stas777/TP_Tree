@@ -13,6 +13,8 @@ int main() {
 	int g = t1.grown();
 	cout << "Grown " << g << endl;
 
+	cout << "Total ammount of seeds = " << t1.seedsAmount() << endl;
+
 	int s;
 	do {
 		s = t1.shake();
