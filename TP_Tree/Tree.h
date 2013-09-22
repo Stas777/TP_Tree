@@ -6,9 +6,10 @@ class Tree {
 	int amount;					// количество яблок на дереве
 
 public:
-	Tree(float, float);
+	Tree(float, float);			// конструктор
 	int grown();
 	int shake();
+	int getAmount();
 };
 
 class Apple {

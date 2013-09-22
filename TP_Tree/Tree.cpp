@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "Tree.h"
 
+
 Tree::Tree(float h, float a){
 	height = h;
 	age = a;
@@ -8,17 +9,21 @@ Tree::Tree(float h, float a){
 }
 
 int Tree::grown() {
-	amount = rand()%100;
+	amount = rand()%101;
 	return amount;
 };
 
 int Tree::shake() {
-	int i = rand()%amount;
+	int i = rand()%(amount+1);
 	amount = amount - i;
 	return i;
 };
 
+int Tree::getAmount(){
+	return amount;
+					  };
+
 int Apple::seeds_ammount() {
-	seeds = rand()%20;
+	seeds = rand()%21;
 	return seeds;
 };
